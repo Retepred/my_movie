@@ -1,23 +1,30 @@
-<p id="notice"><%= notice %></p>
+<div class='show'>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @movie.title %>
-</p>
+  <p>
+    <strong>Title:</strong>
+    <%= @movie.title %>
+  </p>
 
-<p>
-  <%= image_tag @movie.movie_image.url %>
-</p>
+  <div class='pic'>
+    <%= image_tag @movie.movie_image.url %>
+  </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @movie.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @movie.description %>
+  </p>
 
-<p>
-  <strong>Review:</strong>
-  <%= @movie.review %>
-</p>
+  <p>
+    <strong>First seen on:</strong>
+    <%= @movie.category.try(:name) %>
+  </p>
 
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to 'Back', movies_path %>
+  <p>
+    <strong>Review:</strong>
+    <%= @movie.review %>
+  </p>
+
+  <%= link_to 'Edit', edit_movie_path(@movie) %> |
+  <%= link_to 'Back', movies_path %>
+</div>

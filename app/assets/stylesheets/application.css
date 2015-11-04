@@ -15,4 +15,76 @@
  */
 /*==================================================*/
 /*Peters code begins here!*/
+body {
+   background-image: url("/movie.jpg");
+   background-size: 100%;
+}
 
+.menu {
+  /*background-color: blue;*/
+  width: 250px;
+/*  border: 1px solid #6B1229;*/
+  position: fixed;
+  left: 37%;
+  top: 20px;
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+a:visited { 
+    color: red;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline;
+  color: black;
+}
+
+li {
+  text-decoration: none;
+  display: inline;
+  font-size: 20px;
+  color: black;
+}
+
+.field {
+  background-color: white;
+  opacity: 0.7;
+}
+
+.navbar {
+  position: fixed;
+  color: black;
+  left: 23%;
+  top: 30%;
+  width: 55%;
+  text-align: center;
+}
+
+.index {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+}
+
+.show {
+  position: fixed;
+  width: 80%;
+  left: 25%;
+  top: 25%;
+}
+
+/*.pic {
+  width: 10%;
+  height: 10%px;
+  border: 1px solid #6B1229;
+}*/

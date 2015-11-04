@@ -13,3 +13,7 @@ Category.create!(name: 'Cinema')
 Category.create!(name: 'Completely Legitimately online')
 Category.create!(name: 'Netflix/Amazon Instant Video etc')
 Category.create!(name: 'VHS')
+
+Movie.delete_all
+Movie.create!(title: 'Serenity', description: 'Spacecowboys!', category_id: 2, review: 'bloody good film!', movie_image: File.open(Rails.root + "public/serenity.jpg"))
+Movie.create!(title: 'Lord of the Flies', description: 'Boys will kill boys..!', category_id: 2, review: 'Bit dark really, though it was a great book!', movie_image: File.open(Rails.root + "public/flies.jpg"))
